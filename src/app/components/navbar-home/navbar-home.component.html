@@ -1,0 +1,70 @@
+<nav class="nav_bar" data-spy="affix" data-offset-top="10">
+
+    <div class="navbar_elements">
+      
+      <div class="icon">
+        <a class="logo" (click)="scrollToExperience()"><img src="assets/icon.png" alt="icon"> Sebastián Camayo</a>
+      </div>
+      
+      <ul class="list_links">
+        <li class="nav-item">
+            <a class="nav-link active" (click)="scrollTop()">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" (click)="scrollToExperience()">Experiencia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToProjects()">Proyectos</a>
+        </li>
+      </ul>
+      
+      <a class="contact" href="https://www.instagram.com/sebas_camayo2002/" target="_blank">
+        <img src="assets/svg/instagram.svg" alt="instagram" class="link_Img" >
+      </a>
+  
+      <a class="contact" href="https://www.linkedin.com/in/sebasti%C3%A1n-camayo-ramos/" target="_blank">
+        <img src="assets/svg/linkedin.svg" alt="instagram" class="link_Img" >
+      </a>
+  
+      <a class="contact" href="https://github.com/Seboot2002?tab=repositories" target="_blank">
+        <img src="assets/svg/github.svg" alt="instagram" class="link_Img" >
+      </a>
+  
+      <a (click)="click()" class="toggle_button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+    </div>
+    
+    <div class="responsive_navbar" *ngIf="showBool" [@toggleTrigger]="showState">
+    
+      <ul>
+        <li class="nav-item">
+            <a class="nav-link active" (click)="scrollTop()">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" (click)="scrollToExperience()">Experiencia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scrollToProjects()">Proyectos</a>
+        </li>
+      </ul>
+  
+      <div class="responsive_icons">
+        <a class="contact" href="https://www.instagram.com/sebas_camayo2002/" target="_blank">
+          <img src="assets/svg/instagram.svg" alt="instagram" class="link_Img" >
+        </a>
+  
+        <a class="contact" href="https://www.linkedin.com/in/sebasti%C3%A1n-camayo-ramos/" target="_blank">
+          <img src="assets/svg/linkedin.svg" alt="instagram" class="link_Img" >
+        </a>
+  
+        <a class="contact" href="https://github.com/Seboot2002?tab=repositories" target="_blank">
+          <img src="assets/svg/github.svg" alt="instagram" class="link_Img" >
+        </a>
+      </div>
+  
+    </div>
+  
+  </nav>

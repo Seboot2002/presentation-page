@@ -1,0 +1,71 @@
+<app-navbar-home [homeComponent]="this"></app-navbar-home>
+
+<div class="header_box">
+    <div class="header">
+        <h3 @fade-first>Hola, soy Sebastián Camayo</h3>
+        <h1 @fade-first>Ingeniero de Sistemas</h1>
+        <h2 @fade-first>Siempre Creativo &amp; Listo</h2>
+        <a (click)="ActiveScrollToExperience()" @fade-first>Mira mi experiencia</a>
+    </div>
+    
+    <div><img src="assets/svg/wave_header.svg" alt="wave" class="wave"></div>
+    
+</div>
+
+<div class="experience_box">
+    <div class="experience" #experienceElement>
+        
+        <div class="fadeup" #FadeElement>
+            <h1 id="experience">Experiencia</h1>
+            <div class="experience_column">
+        
+                <div class="info">
+                    <h4>Estudios en la Universidad</h4>
+                    <p>Soy un estudiante de ingeniería de sistemas en la Universidad de Lima y actualmente, me encuentro en el ciclo número 7 de mi carrera.</p>
+                    <p>Asimismo, tengo conocimiento en bases de datos SQL (Oracle) y no SQL (MongoDB); además de los paradigmas en la programación como la de “Orientado a objetos” y la “Funcional”. Actualmente, estoy mejorando en la gestión de bases de datos junto con los primeros vistazos de la creación de software.</p>
+                </div>
+                <div class="imagen" >
+                    <img src="assets/ulima.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div><img src="assets/svg/wave_experience.svg" alt="wave" class="wave"></div>
+</div>
+
+<div class="projects" #projectsElement>
+    
+    <div class="fadeup" #FadeElement>
+        <h1 id="projects">Proyectos</h1>
+        <div class="projects_column">
+    
+            <div class="box">
+                <h4>Presentation page</h4>
+                <p>Esta es la página en la que te encuentras ahora. Está hecha en el framework Angular y me enfoco en su estética agregando animaciones y/o imagenes svg. Asimismo, estaré agregando información extra acerca de mis proyectos.</p>
+                <a href="https://github.com/Seboot2002/presentation-page" target="_blank">Mira el código en GitHub</a>
+            </div>
+            <div class="box">
+                <h4>Red social básica</h4>
+                <p>Este es un proyecto en el que realizo una red social básica para experimentar con el framework Angular junto con Bootstrap para los estilos. Asimismo, se utilizó una base de datos hecha en MongoDB.</p>
+                <br>
+                <p>Esta pequeña red social tiene características como:</p>
+                <ul class="">
+                    <li>Publicación de imágenes con descripción.</li>
+                    <li>Perfil de usuario con nombre de usuario e imagen de perfil junto con una lista de seguidores y seguidos; además, de tus propias publicaciones.</li>
+                    <li>Feed en el cual se observan tus publicaciones y la de los seguidos en orden.</li>
+                    <li>Sistema de mensajería básico.
+                    </li>
+                </ul>
+
+                <a href="https://github.com/Seboot2002/basic-social-network" target="_blank">Mira el código en GitHub</a>
+                <a [routerLink]="['basic-social-network']">Más información del proyecto</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    <p class="">© Copyright {{year}} Hecho con <i class="ti-heart text-danger">Angular</i> por <a (click)="ActiveScrollTop()">Sebastián Camayo</a></p>
+</div>

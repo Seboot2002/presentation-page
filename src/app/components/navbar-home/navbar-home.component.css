@@ -1,0 +1,148 @@
+* {
+    background-color: #0e141b;
+}
+
+li, a, button {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    width: 80%;
+}
+
+/* class elements */
+.nav_bar {
+    position: fixed;
+    top: 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0px 5%;
+    list-style: none;
+    transition: all 0.3s ease 0s;
+    z-index: 1;
+}
+
+.navbar_elements {
+    display: inline-flex;
+    justify-content: space-between;
+    flex: 1;
+    padding: 2%;
+    align-items: center;
+    height: 20px;
+}
+
+.navbar_elements li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.nav_bar a:hover {
+    color: #ff5277;
+}
+
+.icon img{
+    width: 40px;
+    margin: 0px 9px 0px 0px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.toggle_button {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.toggle_button .bar {
+    height: 3px;
+    width: 22px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 25%;
+}
+
+.responsive_navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.responsive_navbar li {
+    display: flex;
+}
+
+.nav-item a {
+    width: 100%;
+    padding: 4%;
+    margin: 1%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.link_Img {
+    max-width: 30px;
+}
+
+.navbar_elements .contact .link_Img:hover {
+    background-color: #29333d;
+    border-radius: 20%;
+}
+
+@media (max-width: 600px) {
+
+    .nav_bar {
+        flex-direction: column;
+        padding: 30px 5%;
+    }
+
+    .toggle_button {
+        display: flex;
+    }
+    
+    .list_links, .contact {
+        display: none;
+    }
+
+    .responsive_navbar {
+        display: flex;
+        flex-direction: column;
+        background-color: #0e141b;
+    }
+
+    .responsive_icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .responsive_icons .contact {
+        display: flex;
+        margin: 30px 30px 5px 30px ;
+    }
+    
+    .open {
+        display: flex;
+    }
+
+    .closed {
+        display: none;
+    }
+
+    .nav-item a {
+        border: 1px solid #495057;
+        user-select: none;
+    }
+    
+}
