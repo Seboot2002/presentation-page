@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #2F4550;
+    color: white;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.information {
+    background-color: #2F4550;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15% 10% 8% 10%;
+    background-color: #2F4550;
+    color: white;
+}
+
+.first h1 {
+    font-size: 72px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+
+.first h2 {
+    font-size: 24px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.arrow-down {
+    width: 60px;
+    margin-top: 40px;
+    animation: bounce 2s infinite;
+}
+
+.second, .third {
+    display: flex;
+    justify-content: center;
+    padding: 5% 8%;
+    gap: 5%;
+}
+
+.second {
+    background-color: #F4F4F9;
+    color: #2F4550;
+}
+
+.third {
+    background-color: #B8DBD9;
+    color: #2F4550;
+}
+
+.second .info, .third .info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.second .imagen, .third .imagen {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.second .imagen,
+.third .imagen {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.second .imagen img,
+.third .imagen img {
+    flex: 1 1 calc(33.333% - 16px);
+    max-width: calc(33.333% - 16px);
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    object-fit: contain;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.projects p {
+    font-size: 20px;
+}
+
+.back_button a, .first a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2F4550;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 20px;
+}
+
+.back_button a:hover, .first a:hover {
+    background-color: #2F4550;
+    transform: scale(1.05);
+}
+
+.back_button img {
+    width: 20px;
+    margin-right: 12px;
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    background-color: #2F4550;
+    border-top: 1px solid #495057;
+    padding: 20px 0px;
+    line-height: 1.4;
+}
+
+.footer a {
+    color: white;
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+/*--Responsive--*/
+@media (max-width: 768px) {
+    .first h1 {
+        font-size: 48px;
+    }
+
+    .first h2 {
+        font-size: 18px;
+    }
+
+    .second, .third {
+        flex-direction: column;
+        padding: 10% 5%;
+        text-align: center;
+    }
+
+    .second .imagen, .third .imagen {
+        flex-direction: column;
+    }
+
+    .back_button a {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .second .imagen img,
+    .third .imagen img {
+        flex: 1 1 calc(50% - 16px);
+        max-width: calc(50% - 16px);
+    }
+
+    .info p {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .info h3 {
+        margin-top: 40px;
+    }
+
+}
