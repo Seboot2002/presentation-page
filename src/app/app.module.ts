@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { HomeComponent } from './features/home/home.component';
-import { BasicSocialNetworkComponent } from './features/basic-social-network/basic-social-network.component';
 import { NavbarHomeComponent } from './features/navbar-home/navbar-home.component';
 import { MultiplayerGameComponent } from './features/multiplayer-game/multiplayer-game.component';
 
@@ -14,7 +13,6 @@ import { MultiplayerGameComponent } from './features/multiplayer-game/multiplaye
   declarations: [
     AppComponent,
     HomeComponent,
-    BasicSocialNetworkComponent,
     NavbarHomeComponent,
     MultiplayerGameComponent,
   ],
