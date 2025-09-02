@@ -1,0 +1,111 @@
+<app-navbar-home [homeComponent]="this"></app-navbar-home>
+
+<div class="header_box">
+    <div class="header">
+        <h3 @fade-first>Hola, soy Sebastián Camayo</h3>
+        <h1 @fade-first>Ingeniero de Sistemas</h1>
+        <h2 @fade-first>Siempre Creativo &amp; Listo</h2>
+        <a (click)="ActiveScrollToExperience()" @fade-first>Mira mi experiencia</a>
+    </div>
+</div>
+
+<div class="experience_box">
+  <div class="experience" #experienceElement>
+    <div class="fadeup" #FadeElement>
+      <h1 id="experience">Experiencia</h1>
+      <div class="experience_column">
+
+        <div class="info">
+          <h4>Android Developer – Universidad de Lima</h4>
+          <p> Mayo 2024 – Junio 2025 </p>
+          <br>
+          <p>
+            Participé en el laboratorio de la universidad diseñando y desarrollando aplicaciones Android
+            para distintas áreas, aplicando buenas prácticas de arquitectura y programación moderna con Kotlin.
+          </p>
+          <br>
+          <ul>
+            <li>Diseñé arquitecturas escalables con <strong>Clean Architecture</strong>, aplicando patrones MVVM y MVI.</li>
+            <li>Implementé flujos de datos reactivos con <strong>Kotlin Coroutines</strong> y Flows para mejorar el rendimiento.</li>
+            <li>Desarrollé interfaces modernas y accesibles con <strong>Jetpack Compose</strong>.</li>
+            <li>Realicé pruebas unitarias e integrales asegurando estabilidad en producción.</li>
+            <li>Colaboré en equipos multidisciplinarios bajo metodologías ágiles.</li>
+          </ul>
+
+          <br>
+
+          <p>Proyectos destacados:</p>
+          <ul>
+            <li>App de alumnos: horarios, profesores y compañeros de clase.</li>
+            <li>App de cuentos interactivos para niños con narración a distintas velocidades.</li>
+          </ul>
+        </div>
+
+        <div class="imagen">
+          <img src="assets/ulima.png" alt="Universidad de Lima">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="projects" #projectsElement>
+    
+    <div class="fadeup" #FadeElement>
+        <h1 id="projects" class="projects-title">Proyectos</h1>
+        <div class="projects_column">
+            
+            <div class="box">
+                <h4>Presentation page</h4>
+                <p>Esta es la página en la que te encuentras ahora. Está hecha en el framework Angular y me enfoco en su estética agregando animaciones y/o imagenes svg. Asimismo, estaré agregando información extra acerca de mis proyectos.</p>
+                <a href="https://github.com/Seboot2002/presentation-page" target="_blank" class="btn-link">Mira el código en GitHub</a>
+            </div>
+
+            <div class="box">
+                <h4>Videojuego multijugador de dibujo y minijuegos</h4>
+                <p>
+                    Proyecto desarrollado en <strong>Unity</strong> con <strong>C#</strong> y 
+                    <strong>Netcode for GameObjects</strong>, en el cual los jugadores 
+                    compiten en diferentes rondas de minijuegos. 
+                    El núcleo del juego es un sistema de dibujo colaborativo, donde hasta 4 jugadores 
+                    participan en retos rápidos y dinámicos.
+                </p>
+                <br>
+                <p>Características principales:</p>
+                <ul>
+                    <li>Modo <strong>multijugador en tiempo real</strong> con lógica de rondas y sincronización de jugadores.</li>
+                    <li><strong>Minijuegos variados</strong>: dibujo competitivo, evitar obstáculos, memoria visual, etc.</li>
+                    <li>Gestión de salas y jugadores con control de turnos.</li>
+                    <li>Interfaz dinámica e intuitiva con animaciones y retroalimentación visual.</li>
+                    <li>Arquitectura modular que facilita la adición de nuevos minijuegos.</li>
+                </ul>
+                <br>
+                
+                <a [routerLink]="['multiplayer-game']" class="btn-link btn-info">Más información del proyecto</a>
+            </div>
+
+            <div class="box">
+                <h4>Red social básica</h4>
+                <p>Este es un proyecto en el que realizo una red social básica para experimentar con el framework Angular junto con Bootstrap para los estilos. Asimismo, se utilizó una base de datos hecha en MongoDB.</p>
+                <br>
+                <p>Esta pequeña red social tiene características como:</p>
+                <ul class="">
+                    <li>Publicación de imágenes con descripción.</li>
+                    <li>Perfil de usuario con nombre de usuario e imagen de perfil junto con una lista de seguidores y seguidos; además, de tus propias publicaciones.</li>
+                    <li>Feed en el cual se observan tus publicaciones y la de los seguidos en orden.</li>
+                    <li>Sistema de mensajería básico.
+                    </li>
+                </ul>
+                
+                <br>
+
+                <a href="https://github.com/Seboot2002/basic-social-network" target="_blank" class="btn-link">Mira el código en GitHub</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    <p class="">© Copyright {{year}} Hecho con <i class="ti-heart text-danger">Angular</i> por <a (click)="ActiveScrollTop()">Sebastián Camayo</a></p>
+</div>

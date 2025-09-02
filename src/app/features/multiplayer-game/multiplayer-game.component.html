@@ -1,0 +1,85 @@
+<div class="information">
+
+    <div class="back_button">
+        <a [routerLink]="['home']"> 
+            <img src="assets/svg/arrow-back.svg" alt=""> De vuelta al inicio
+        </a>
+    </div>
+
+    <div class="first" style="background-color:#B8DBD9; color:#2F4550;">
+        <h1>Videojuego Multijugador</h1>
+        <h2>Hecho con Unity, C# & FishNet</h2>
+        <br>
+        <img src="assets/svg/arrow-down.svg" alt="" class="arrow-down">
+    </div>
+
+    <div class="second" style="background-color:#F4F4F9; color:#2F4550;">
+        <div class="info">
+            <h3>Sistema de Rondas</h3>
+            <p>
+                El núcleo del juego se basa en un sistema de rondas dinámicas donde los jugadores
+                participan en distintos retos competitivos. Cada ronda tiene su propio controlador 
+                y lógica, lo que permite flexibilidad para agregar más minijuegos en el futuro.
+            </p>
+        </div>
+        <div class="imagen">
+            <img src="assets/multiplayer-game/draw_game.jpg" alt="Pantalla de dibujo">
+            <img src="assets/multiplayer-game/lobby.jpg" alt="Lobby multijugador">
+        </div>
+    </div>
+
+    <div class="third" style="background-color:#B8DBD9; color:#2F4550;">
+        <div class="imagen">
+            <img src="assets/multiplayer-game/minigame_1.jpg" alt="Minijuego 1">
+            <img src="assets/multiplayer-game/minigame_2.jpg" alt="Minijuego 2">
+            <img src="assets/multiplayer-game/minigame_3.jpg" alt="Minijuego 3">
+        </div>
+        <div class="info">
+            <h3>Minijuegos Variados</h3>
+            <p>
+                Incluye diferentes tipos de minijuegos: 
+                <strong>dibujo colaborativo</strong>, 
+                <strong>evitar obstáculos</strong>, 
+                <strong>memoria visual</strong> y más.  
+                Los jugadores compiten en tiempo real, ganando puntos por habilidad y rapidez.
+            </p>
+        </div>
+    </div>
+
+    <div class="second" style="background-color:#F4F4F9; color:#2F4550;">
+        <div class="info">
+            <h3>Multijugador en Tiempo Real</h3>
+            <p>
+                El juego soporta hasta <strong>4 jugadores simultáneos</strong>, sincronizando 
+                sus acciones mediante Netcode for GameObjects.  
+                Las acciones como el superar una ronda o lanzar un efecto a otro es compartida en tiempo real 
+                para asegurar una experiencia fluida.
+            </p>
+        </div>
+        <div class="imagen">
+            <img src="assets/multiplayer-game/menu_host.jpg" alt="Conexión multijugador">
+            <img src="assets/multiplayer-game/menu_client.jpg" alt="Gameplay en tiempo real">
+        </div>
+    </div>
+
+    <div class="third" style="background-color:#586F7C; color:#F4F4F9;">
+        <div class="imagen">
+            <img src="assets/multiplayer-game/final_results.jpg" alt="Pantalla de victoria">
+        </div>
+        <div class="info">
+            <h3>Interfaz y Experiencia</h3>
+            <p>
+                La interfaz está pensada para ser intuitiva y atractiva, con animaciones 
+                y feedback visual que refuerzan la experiencia de juego.  
+                La estética combina simplicidad con dinamismo, destacando los elementos importantes.
+            </p>
+        </div>
+    </div>
+    
+    <div class="footer" style="background-color:#2F4550; color:#F4F4F9;">
+        <p>© Copyright {{year}} Hecho con <i class="ti-heart text-danger"></i> 
+            en <strong>Unity</strong> por 
+            <a [routerLink]="['home']" style="color:#F4F4F9;">Sebastián Camayo</a>
+        </p>
+    </div>
+</div>

@@ -5,16 +5,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { HomeComponent } from './components/home/home.component';
-import { BasicSocialNetworkComponent } from './components/basic-social-network/basic-social-network.component';
-import { NavbarHomeComponent } from './components/navbar-home/navbar-home.component';
+import { HomeComponent } from './features/home/home.component';
+import { BasicSocialNetworkComponent } from './features/basic-social-network/basic-social-network.component';
+import { NavbarHomeComponent } from './features/navbar-home/navbar-home.component';
+import { MultiplayerGameComponent } from './features/multiplayer-game/multiplayer-game.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     BasicSocialNetworkComponent,
-    NavbarHomeComponent
+    NavbarHomeComponent,
+    MultiplayerGameComponent,
   ],
   imports: [
     BrowserModule,

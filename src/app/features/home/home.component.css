@@ -1,0 +1,369 @@
+* {
+    list-style: inside;
+}
+
+/*header*/
+.header {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: center;
+    padding: 18% 18%;
+    background-color: #B8DBD9;
+    color: #2F4550;
+}
+
+.header h1 {
+    font-size: 100px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.header h2 {
+    padding: 5px 0px;
+    text-align: left;
+}
+
+.header a {
+    color: #ff214f;
+    width: 15%;
+    cursor: pointer;
+}
+
+.header_box {
+    position: relative;
+}
+
+.wave {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+}
+
+/*experience*/
+.experience {
+    background-color: #F4F4F9;
+    color: #2F4550;
+    text-align: center;
+    position: relative;
+}
+
+.experience_column {
+    display: inline-flex;
+    align-items: center;
+}
+
+.experience h1{
+    font-size: 70px;
+    padding-top: 120px;
+}
+
+.experience h4 {
+    padding: 8px 0px;
+    border-bottom: 2px solid #495057;
+    padding-bottom: 2%;
+}
+.experience p {
+    padding-top: 2%;
+}
+
+.experience .info{
+    text-align: left;
+    padding: 13% 8% 24%;
+    color: #2F4550;
+    font-size: 150%;
+    width: 100%;
+    max-width: 600px;
+}
+
+.experience .info ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 15px 0;
+}
+
+.experience .info ul li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 12px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #2F4550;
+}
+
+.experience img {
+    border-radius: 100%;
+    max-width: 40%;
+    margin-bottom: 10%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.experience_box {
+    position: relative;
+}
+
+/*--Projects--*/
+.projects{
+    margin: 0 auto;
+    padding: 50px 20px;
+    color: #2F4550;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #B8DBD9;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.projects-title{
+    font-size: 4rem;
+    padding-top: 120px;
+    margin-bottom: 100px;
+    text-align: center;
+    color: #2F4550;
+    font-weight: 700;
+}
+
+.projects_column {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+  padding: 25px;
+  width: 100%;
+  max-width: 450px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 24px rgba(0,0,0,0.15);
+}
+
+.box h4 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #2F4550;
+  font-weight: 600;
+}
+
+.box p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  color: #586F7C;
+}
+
+.features-list {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: #586F7C;
+}
+
+.features-list li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.btn-link {
+  display: inline-block;
+  margin: 20px 0 0;
+  background-color: #2F4550;
+  color: #F4F4F9;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.btn-link:hover {
+  background-color: #586F7C;
+}
+
+.btn-info {
+  background-color: #ff214f;
+}
+
+.btn-info:hover {
+  background-color: #d81c3b;
+}
+
+/*--Footer--*/
+
+.footer {
+    text-align: center;
+    color: white;
+    background-color: #2F4550;
+    border-top: 1px solid #495057;
+    padding: 20px 0px;
+}
+
+.footer a {
+    color: white;
+    cursor: pointer;
+}
+
+/*--Responsive--*/
+@media (max-width: 700px) {
+
+  /* Header */
+  .header {
+    padding-top: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .header h1 {
+    font-size: 60px;
+    padding: 15% 0;
+    text-align: center;
+  }
+
+  .header h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .header a {
+    color: #ff214f;
+    width: 60%;
+    display: inline-block;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  /* Experience section */
+  .experience_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .experience .info {
+    text-align: center;
+    font-size: 120%;
+    max-width: 100%;
+    padding: 20% 0;
+  }
+
+  .experience h1 {
+    font-size: 50px;
+  }
+
+  .experience h4 {
+    margin: 20px 20px;
+  }
+
+  .experience p {
+    margin: 0 20px;
+  }
+
+  /* Projects section */
+  .projects h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .projects_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 0 15px;
+  }
+
+  .projects_column .box {
+    background-color: rgba(0, 255, 255, 0);
+    border: 1px solid #495057;
+    padding: 20px;
+    width: 90%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .projects_column .box:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+
+  .btn-link {
+    background-color: #2F4550;
+    max-width: 90%;
+    padding: 10px 20px;
+    margin: 20px 0 0;
+    text-align: center;
+    font-size: 1.1rem;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-link:hover {
+    background-color: #354750;
+  }
+
+  .btn-info {
+    background-color: #ff214f;
+  }
+
+  .btn-info:hover {
+    background-color: #d81c3b;
+  }
+
+  .projects_column .box p {
+    width: 100%;
+    max-width: 350px;
+    margin: 15px 0 0;
+    text-align: center;
+    color: #2F4550;
+  }
+
+  .imagen {
+    margin-bottom: 50px;
+  }
+
+  .footer {
+    text-align: center;
+    color: white;
+    background-color: #2F4550;
+    border-top: 1px solid #495057;
+    padding: 20px 0px;
+  }
+
+  .footer a {
+    color: white;
+    cursor: pointer;
+  }
+
+}
+
+
+/*Animations*/
+.fadeup {
+    transform: translateY(50px);
+    opacity: 0;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+.in-view {
+    transform: none;
+    opacity: 1;
+}
